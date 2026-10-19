@@ -13,8 +13,8 @@
         pname = "switch-search";
         version = "0.1.0";
         src = ./.;
-        vendorHash = pkgs.lib.fakeHash; # replace after first build, see below
-      };
+        vendorHash = "sha256-dyRlT2EfC7iJqwFkvmmt9VTCYc2uBWedKZGo7yqMOuM="; # replace after first build, see below
+      };  
 
       # nix run
       apps.${system}.default = {
