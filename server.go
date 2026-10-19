@@ -41,5 +41,5 @@ func main() {
 		return c.Redirect().To("https://www.google.com/search?q=" + query) // Default to Google if no bang is found
 	})
 
-	app.Listen(":3000")
+	app.Listen(":9080")
 }
