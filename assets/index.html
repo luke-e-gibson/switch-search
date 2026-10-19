@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Search</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --bg-color: #f4f4f4;
+            --text-color: #1a1a1a;
+            --input-bg: #ffffff;
+            --input-border: #ccc;
+            --button-bg: #007BFF;
+            --button-hover-bg: #0056b3;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121212;
+                --text-color: #f2f2f2;
+                --input-bg: #1e1e1e;
+                --input-border: #444;
+                --button-bg: #4a90e2;
+                --button-hover-bg: #357abd;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid var(--input-border);
+            background-color: var(--input-bg);
+            color: var(--text-color);
+        }
+        button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: var(--button-bg);
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: var(--button-hover-bg);
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+       <form action="/search" method="get">
+            <input type="text" name="q" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form> 
+    </div>
+</body>
+</html>
