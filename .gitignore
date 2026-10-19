@@ -1,0 +1,4 @@
+*.envrc
+*.lock
+*.mod
+.direnvrc
